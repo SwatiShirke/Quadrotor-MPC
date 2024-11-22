@@ -1,0 +1,50 @@
+N_sim: 10               # Simulation time
+Tf: 0.1                 # Final time (horizon time)
+N: 10                   # Number of steps (horizon length)
+
+m: 2                    # Mass of the robot
+g: 9.81                 # Gravitational constant (m/s^2)
+l: 0.25                 # Length (in meters)
+sigma: 1                # Some coefficient (you can specify its role)
+
+ixx: 1.2                # Moment of inertia around x-axis
+iyy: 1.2                # Moment of inertia around y-axis
+izz: 2.3                # Moment of inertia around z-axis
+
+r1: 0.0                 # Resistance 1 (e.g., friction, damping)
+r2: 0.0                 # Resistance 2
+r3: 0.0                 # Resistance 3
+
+n1: 1.2                 # Noise factor 1 (e.g., sensor noise, disturbances)
+n2: 1.2                 # Noise factor 2
+n3: 2.3                 # Noise factor 3
+
+N_sim: 200              # Simulation steps
+u_max: 20               # Maximum control input
+
+mav_name: "str"         # MAV name as a string
+mass: 2.0               # Mass of the MAV
+
+Q: [20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 20.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.002, 0.0, 0.0, 0.0,
+     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.002]
+
+R: [0.02, 0.0, 0.0, 0.0,
+     0.0, 0.02, 0.0, 0.0,
+     0.0, 0.0, 0.02, 0.0,
+     0.0, 0.0, 0.0, 0.02]
+
+ubu: [20.0, 20.0, 20.0, 20.0]    # Upper bound on inputs
+lbu: [-20.0, -20.0, -20.0, -20.0] # Lower bound on inputs
+
+max_u: 20
+
+ref_array: [0,0,0 ,0,0,0 ,0,0,0, 0,0,0, 0,0, 0, 0]
